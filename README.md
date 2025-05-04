@@ -5,13 +5,13 @@ Ez a projekt a romániai lakáspiac elemzésére és vizualizációjára épül 
 ##  A projekt tartalma
 
 - Python adatelemző kód (`romanian_housing_analysis_fixed.py`)
-- 7 adatvizualizáció .png formátumban (`abra/` mappa)
+- 7 adatvizualizáció .png formátumban 
 - HTML weboldal bemutatóval és ábrákkal (`index.html`)
 - Adatfájl: strukturált CSV fájl 20 romániai város adataival
 
 ## Vizualizációk
 
-1. Lakásárak városok szerint
+1. Lakásárak alakulása városok szerint
 2. Bérleti díjak időbeli alakulása
 3. Átlagjövedelmek összehasonlítása
 4. Munkanélküliségi trendek
@@ -24,13 +24,6 @@ Ez a projekt a romániai lakáspiac elemzésére és vizualizációjára épül 
 - A lakhatás megfizethetősége hogyan változik időben és térben.
 - Milyen kapcsolat van a gazdasági mutatók (jövedelem, munkanélküliség) és a lakáspiac között.
 - Városok közötti különbségek és trendek felismerése.
-
-##  Használat
-
-1. Futtasd a `romanian_housing_analysis_fixed.py` fájlt Python 3.10+ környezetben.
-2. A kód automatikusan létrehozza a vizualizációkat az `abra/` mappában.
-3. Nyisd meg az `index.html` fájlt böngészőben a webes bemutatóhoz.
-4. Alternatív megoldásként a projekt feltölthető GitHub Pages-re.
 
 ## Készítők
 
