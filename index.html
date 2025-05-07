@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakásadatok Vizualizációi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .chart {
+            margin-top: 20px;
+        }
+        .chart img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lakásadatok és Bérleti Díjak Vizualizációi</h1>
+</header>
+
+<div class="container">
+    <!-- 1. Projekt bemutatása -->
+    <div class="section">
+        <h2 class="title">Miről szól a projekt?</h2>
+        <p class="content">
+            Ez a projekt a lakásárak, bérleti díjak és jövedelmek alakulását mutatja be különböző városokban az évek során. A vizualizációk célja, hogy segítse a felhasználókat abban, hogy jobban megértsék a lakáspiac változásait és azok összefüggéseit a jövedelmekkel és bérleti díjakkal.
+        </p>
+    </div>
+
+    <!-- 2. Adatok leírása -->
+    <div class="section">
+        <h2 class="title">Milyen adatokat használsz?</h2>
+        <p class="content">
+            A projekt különböző városok lakáspiaci adatait tartalmazza, beleértve a lakásárakat, bérleti díjakat és jövedelmeket. Az adatok időbeli alakulását is bemutatjuk, így látható, hogyan változtak az árak és a jövedelmek az évek során. Ezen kívül a munkanélküliségi ráta is szerepel a vizualizációk között.
+        </p>
+    </div>
+
+    <!-- 3. Miért érdekesek az adatok? -->
+    <div class="section">
+        <h2 class="title">Miért érdekesek az adatok?</h2>
+        <p class="content">
+            Az adatok segítenek megérteni, hogyan változtak a lakásárak és bérleti díjak az idők során, és hogyan befolyásolják a jövedelmek és a gazdasági mutatók (például a munkanélküliségi ráta) ezeket a piacokat. A lakáspiac és a bérleti piac változása fontos társadalmi és gazdasági hatásokkal jár, amelyek befolyásolják a mindennapi életet.
+        </p>
+    </div>
+
+    <!-- 4. Cél-felhasználó -->
+    <div class="section">
+        <h2 class="title">Ki a cél-felhasználó?</h2>
+        <p class="content">
+            A cél-felhasználók közé tartoznak ingatlanpiaci szakemberek, befektetők, várostervezők, gazdasági elemzők, illetve bárki, akit érdekel a lakáspiac és bérleti díjak alakulása. Az adatok segíthetnek a döntéshozatalban, különösen azok számára, akik ingatlanba szeretnének fektetni, vagy szeretnének többet tudni a gazdasági trendekről.
+        </p>
+    </div>
+
+    <!-- 5. Mit szeretnél, hogy a felhasználó tanuljon ebből? -->
+    <div class="section">
+        <h2 class="title">Mit szeretnél, hogy a felhasználó tanuljon ebből?</h2>
+        <p class="content">
+            A felhasználók jobban megérthetik a lakásárak és bérleti díjak alakulásának összefüggéseit, és azokat a tényezőket, amelyek befolyásolják ezeket. Az adatok segítenek a jövőbeli trendek előrejelzésében és a lakáspiacra vonatkozó döntések meghozatalában.
+        </p>
+    </div>
+
+    <!-- 6. Skálázhatóság -->
+    <div class="section">
+        <h2 class="title">Mennyire skálázható a megoldásod?</h2>
+        <p class="content">
+            A megoldás skálázható, mivel könnyen hozzáadhatók további városok vagy újabb évek adatai. A diagramok típusai is könnyen bővíthetők, például újabb grafikonok vagy térképek hozzáadásával.
+        </p>
+    </div>
+
+    <!-- 7. Automatizálhatóság -->
+    <div class="section">
+        <h2 class="title">Mennyire automatizálható a megoldásod?</h2>
+        <p class="content">
+            A megoldás automatizálható, mivel a diagramok generálása programozható. Az adatok folyamatos frissítésével és a grafikonok automatikus generálásával biztosítható, hogy mindig aktuális adatokat láthassanak a felhasználók. A teljes adatfrissítési folyamat, valamint az új adatok hozzáadása is automatizálható Python segítségével.
+        </p>
+    </div>
+
+    <!-- 8. Hasznos bővítések -->
+    <div class="section">
+        <h2 class="title">Mivel lenne még hasznos bővíteni?</h2>
+        <p class="content">
+            A projekt bővíthető interaktív elemekkel, például dinamikus szűrőkkel, ahol a felhasználók választhatják ki a városokat, éveket vagy más változókat, hogy még jobban testre szabják a vizualizációkat. Ezen kívül integrálható további gazdasági mutatók, például GDP vagy infláció, amelyek szorosabb kapcsolatban állnak a lakáspiac alakulásával.
+        </p>
+    </div>
+
+    <!-- 9. Diagramok megjelenítése -->
+    <div class="chart">
+        <h2 class="title">Lakásárak alakulása városonként</h2>
+        <img src="abra/1_lakasarak_ido_bar.png" alt="Lakásárak alakulása">
+    </div>
+
+    <div class="chart">
+        <h2 class="title">Bérleti díjak alakulása városonként</h2>
+        <img src="abra/2_berletidij_ido_bar.png" alt="Bérleti díjak alakulása">
+    </div>
+
+    <div class="chart">
+        <h2 class="title">Jövedelmek alakulása városonként</h2>
+        <img src="abra/3_jovedelem_ido_bar.png" alt="Jövedelmek alakulása">
+    </div>
+
+    <div class="chart">
+        <h2 class="title">Lakásár és bérleti díj kapcsolata</h2>
+        <img src="abra/4_lakasar_vs_berletidij.png" alt="Lakásár és bérleti díj kapcsolata">
+    </div>
+
+    <div class="chart">
+        <h2 class="title">Megfizethetőség alakulása városonként</h2>
+        <img src="abra/5_megfizethetoseg.png" alt="Megfizethetőség alakulása">
+    </div>
+
+    <div class="chart">
+        <h2 class="title">Lakásárak hőtérképe (év és város szerint)</h2>
+        <img src="abra/6_heatmap_lakasar.png" alt="Lakásárak hőtérképe">
+    </div>
+
+    <div class="chart">
+        <h2 class="title">Munkanélküliségi ráta alakulása városonként</h2>
+        <img src="abra/7_munkanelkuliseg_ido.png" alt="Munkanélküliségi ráta alakulása">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Lakásadatok. Minden jog fenntartva.</p>
+</footer>
+
+
+
+    <div class="footer">
+        Projekt készítők: <strong>Sólyom Anett és Soós Maria Izabela</strong>
+    </div>
+
+</body>
+</html>
+
