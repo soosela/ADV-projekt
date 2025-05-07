@@ -28,7 +28,7 @@ A projekt összesen 7 különböző vizualizációt tartalmaz:
 6. **Lakásárak hőtérképe város és év szerint**
 7. **Munkanélküliségi ráta időbeli alakulása**
 
-Az ábrák a `abra/` mappában találhatók, a weboldal pedig ezeket jeleníti meg dinamikusan.
+
 
 ---
 
